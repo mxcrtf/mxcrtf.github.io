@@ -1,0 +1,459 @@
+/*STYLES GENERAUX*/
+*
+{
+	font-family: Avenir, sans-serif;
+	padding: 0px;
+	margin: 0px;
+	text-align: justify;
+	box-sizing: border-box;
+}
+
+body
+{
+	background: url("https://cdn.pixabay.com/photo/2016/09/08/22/43/books-1655783_960_720.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+p
+{
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+a
+{
+	text-decoration: none;
+	color: #000;
+}
+
+h1
+{
+	text-decoration: none;
+	color: rgb(14, 115, 231);
+	margin-right: 30px;
+}
+
+img
+{
+box-shadow: 8px 8px 12px rgb(141, 97, 95)  }
+
+/* SIDEBAR  */
+.topnav
+{
+	overflow: hidden;
+	background-color: rgb(190, 190, 190);
+}
+
+/* Navbar liens */
+.topnav a
+{
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* Navbar liens quand on passe dessus*/
+.topnav a:hover
+{
+	background-color: grey;
+	color: black;
+}
+
+/* Active/current liens */
+.topnav a.active
+{
+	background-color: rgb(14, 115, 231) ;
+	color: white;
+}
+
+/* style du input container */
+.topnav .login-container
+{
+	float: right;
+}
+
+/* style du input field dans la navbar */
+.topnav input[type=text]
+{
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+	width: 150px;
+	
+}
+
+/* Style du button dans le input container */
+.topnav .login-container button
+{
+	float: right;
+	padding: 6px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+
+.topnav .login-container button:hover
+{
+	background: grey;
+}
+
+/* Responsive - Sur petit écrans, et horizontallement */
+@media screen and (max-width: 600px)
+{
+	.topnav .login-container
+	{
+		float: none;
+	}
+
+	.topnav a, .topnav input[type=text], .topnav .login-container button
+	{
+		float: none;
+		display: block;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+		padding: 14px;
+	}
+
+	.topnav input[type=text]
+	{
+		border: 1px solid #ccc;
+	}
+
+}
+
+/*HEADER & FOOTER*/
+header, footer
+{
+	width: 100%;
+	padding: 20px 0px;
+    background: url("https://cdn.pixabay.com/photo/2017/08/06/22/13/sea-2596916_960_720.jpg")no-repeat center center fixed;
+    background-size: cover;
+    background-position: bottom;
+	box-shadow: 0px 0px 15px #333;
+}
+
+header
+{
+	border-bottom: 2px solid rgb(190, 190, 190);
+	height: 120px;
+}
+
+header h1
+{
+	color: rgb(190, 190, 190);
+	font-size: 1.5em;
+	width: 90%;
+	margin: 0 auto;
+}
+
+footer
+{
+	border-top: 2px solid #fff;
+}
+
+footer p
+{
+	width: 90%;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+}
+
+footer a
+{
+	color: #fff;
+}
+
+/*SECTIONS*/
+section
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 100%;
+	padding-bottom: 20px;
+	margin: 20px auto;
+	box-shadow: 0px 0px 10px #bbb;
+	background-color: rgb(190, 190, 190);
+}
+
+section h2
+{
+	margin: 20px 0;
+	width: 90%;
+}
+
+section > div
+{
+	width: 90%;
+}
+
+/*SECTION INFOS*/
+.photo
+{
+	text-align: center;
+}
+
+.photo img
+{
+	width: 150px;
+	height: 150px;
+	border: 3px solid #fff;
+	box-shadow: 0px 0px 10px #777;
+	border-radius: 50%;
+	margin-top: -80px;
+}
+
+.prez
+{
+	border-bottom: 2px dashed #ccc;
+}
+
+.prez a
+{
+	display: block;
+	text-align: center;
+	padding: 10px;
+	margin: 10px auto 30px auto;
+	color: #fff;
+	background-color:rgb(14, 115, 231);
+	box-shadow: 0px 0px 10px #ccc;
+	border-radius: 5px;
+}
+
+.contact-flex
+{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.contact-flex p:first-child
+{
+	flex: 0 0 40%;
+}
+
+.contact-flex p:last-child
+{
+	flex: 0 0 60%;
+}
+
+.social
+{
+	display: flex;
+	justify-content: space-around;
+	margin: 10px auto 0px auto;
+}
+
+.social img
+{
+	width: 40px;
+	height: 40px;
+}
+
+/*SECTION CATÈGORIE*/
+.exp
+{
+	display: flex;
+	flex-flow: row wrap;
+	border-bottom: 1px solid #bbb;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.exp-info
+{
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.exp-logo
+{
+	flex: 0 0 25%;
+	max-width: 100px;
+}
+
+.exp-info
+{
+	flex: 0 0 70%;
+	margin-left: auto;
+}
+
+.exp img
+{
+	width: 100%;
+}
+
+.exp h3
+{
+	font-size:  1.2em;
+}
+
+.exp h4
+{
+	font-size:  1em;
+	font-weight: normal;
+}
+
+.mySlides
+{
+	display:none;
+}
+
+@media screen and (min-width: 980px)
+{
+	section
+	{
+		width: 80%;
+		box-shadow: 0px 0px 10px #bbb;
+	}
+
+	a:hover
+	{
+		color: rgb(14, 115, 231);
+	}
+
+	header h1
+	{
+		width: 80%;
+	}
+
+	.prez, .contact
+	{
+		flex: 0 0 45%;
+	}
+
+	.prez
+	{
+		border-bottom: none;
+		border-right: 2px solid #ccc;
+		padding-right: 20px;
+		margin-left: auto;
+	}
+
+	.contact
+	{
+		padding-left: 20px;
+		margin-right: auto;
+	}
+
+	.prez a
+	{
+		border: 2px solid transparent;
+	}
+
+	.prez a:hover
+	{
+		color: rgb(14, 115, 231);
+		background-color: #fff;
+		border: 2px solid rgb(14, 115, 231);
+		box-shadow: 0px 0px 20px #666;
+	}
+
+	.exp-logo
+	{
+		flex: 0 0 10%;
+	}
+
+	.exp-info, .exp-desc
+	{
+		flex: 0 0 85%;
+		margin-left: auto;
+	}
+
+	.interet
+	{
+		flex: 0 1 25%;
+	}
+}
+
+/* Partie critère de note*/
+em
+{
+	display: block;
+	margin: .5em auto 2em;
+	color: #bbb;
+}
+
+p, p a
+{
+	color: rgb(20, 20, 20);
+	text-decoration: none;
+}
+
+p a:hover,  p a:focus
+{
+	text-decoration: underline;
+}
+
+p + p
+{
+	color: #bbb;
+	margin-top: 2em;
+}
+
+.detail
+{
+	position: absolute;
+	text-align: right;
+	right: 5px;
+	bottom: 5px;
+	width: 50%;
+}
+
+a[href*="intent"]
+{
+	display:inline-block;
+	margin-top: 0.4em;
+}
+
+.rating
+{
+	width: 226px;
+	margin: 0 auto 1em;
+	font-size: 45px;
+	overflow:hidden;
+}
+
+.rating a
+{
+	float:right;
+	color: #aaa;
+	text-decoration: none;
+	-webkit-transition: color .4s;
+	-moz-transition: color .4s;
+	-o-transition: color .4s;
+	transition: color .4s;
+}
+
+.rating a:hover,  .rating a:hover ~ a,  .rating a:focus,  .rating a:focus ~ a
+{
+	color: orange;
+	cursor: pointer;
+}
+
+.rating2
+{
+	direction: rtl;
+}
+
+.rating2 a
+{
+float:none  }
+
+/*Fin partie de critère*/
+
+
+
